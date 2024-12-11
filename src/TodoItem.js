@@ -3,7 +3,7 @@ import React from 'react';
 function TodoItem({ task, toggleTaskCompletion, removeTask }) {
   return (
     <li>
-      <span 
+      <span
         style={{ textDecoration: task.completed ? 'line-through' : 'none' }}
         onClick={() => toggleTaskCompletion(task.id)}
       >
