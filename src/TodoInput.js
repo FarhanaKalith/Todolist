@@ -13,11 +13,11 @@ function TodoInput({ addTask }) {
   };
 
   return (
-    <div>
-      <input 
-        type="text" 
-        value={task} 
-        onChange={handleInputChange} 
+    <div style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}>
+      <input
+        type="text"
+        value={task}
+        onChange={handleInputChange}
         placeholder="Enter a task"
       />
       <button onClick={handleAddClick}>Add Task</button>
